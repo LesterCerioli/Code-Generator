@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, constr
-from typing import Optional, List
+from typing import Annotated, Optional, List
 from datetime import datetime
 from enum import Enum
 
@@ -41,11 +41,11 @@ class JobStatus(str, Enum):
 # Code Generation
 # -----------------------------
 class GenerateRequest(BaseModel):
-    requirements: constr(min_length=5) = Field(
-        ..., description="Description of the requirements for code generation"
+    requirements: str = Field(
+        ..., min_length=5, description="Description of the requirements for code generation"
     )
-    repo_name: constr(min_length=1, max_length=100) = Field(
-        ..., description="Name of the repository to be created on GitHub"
+    repo_name: str = Field(
+        ..., min_length=1, max_length=100, description="Name of the repository to be created on GitHub"
     )
     github_username: str = Field(..., description="GitHub username")
     github_token: str = Field(..., description="GitHub Personal Access Token")

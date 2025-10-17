@@ -2,7 +2,7 @@ from typing import List, Dict, Any
 from datetime import datetime
 import asyncpg
 import logging
-from app.db.database import get_database
+from app.database import get_database
 from app.services.utils.retry import retry_async, is_transient_pg_error
 from app.services.utils.sanitize import sanitize_path
 
