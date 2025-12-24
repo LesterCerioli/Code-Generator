@@ -1,0 +1,5 @@
+{"prompt": "Explain the Single Responsibility Principle.", "response": "The Single Responsibility Principle states that a class should have only one reason to change, meaning it should have only one responsibility."}
+{"prompt": "What problem does the Open/Closed Principle solve?", "response": "The Open/Closed Principle prevents frequent modifications to existing code by encouraging extension instead of modification."}
+{"prompt": "Explain the Liskov Substitution Principle in simple terms.", "response": "Objects of a superclass should be replaceable with objects of its subclasses without breaking the application."}
+{"prompt": "Why is the Interface Segregation Principle important?", "response": "It prevents clients from being forced to depend on methods they do not use."}
+{"prompt": "What does the Dependency Inversion Principle promote?", "response": "It promotes depending on abstractions instead of concrete implementations."}

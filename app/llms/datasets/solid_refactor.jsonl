@@ -1,0 +1,2 @@
+{"prompt": "Refactor this code to follow SRP:\nclass UserService:\n    def create_user(self): pass\n    def send_email(self): pass", 
+ "response": "Separate responsibilities into UserService and EmailService classes."}
